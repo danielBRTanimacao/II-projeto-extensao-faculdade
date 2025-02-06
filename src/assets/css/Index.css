@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+:root {
+    --primary-dk-blue: #0a2463;
+    --secondary-yellow: #f4a261;
+    --accent-white: #ffffff;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--accent-white);
+    color: var(--primary-dk-blue);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    margin: 0 1em;
+}
+
+/* PRINCIPAL HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.header nav a {
+    padding: 0 5px;
+}
+
+/* SECOND HEADER */
+.second-header {
+    background: url(../imgs/fundo.jpg) no-repeat;
+}
