@@ -4,6 +4,7 @@
 
 :root {
     --primary-dk-blue: #0a2463;
+    --light-blue: #017bba;
     --primary-yellow: #fdb515;
     --primary-orange: #f97300;
     --secondary-orange: #ff6500;
@@ -19,17 +20,18 @@ body {
 }
 
 h1 {
-    font-family: "Merriweather", serif;
+    font-family: "Merriweather", serif !important;
     font-size: 4em;
-    margin: 0;
 }
 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
     font-family: "Poppins", sans-serif;
+    margin: 0;
 }
 
 p {
@@ -54,6 +56,15 @@ p {
 
 .container {
     margin: 0 1em;
+}
+
+.lead {
+    text-transform: uppercase;
+}
+
+.lead,
+cite {
+    font-weight: 220;
 }
 
 /* PRINCIPAL HEADER */
@@ -109,7 +120,7 @@ p {
 /* SECOND HEADER */
 
 #cabecalho {
-    background-color: var(--primary-dk-blue);
+    background-color: var(--light-blue);
     color: var(--accent-white);
     align-content: center;
     block-size: 100dvh;
@@ -129,7 +140,6 @@ p {
 }
 
 .view-course h5 {
-    margin: 0;
     font-size: 1em;
 }
 
@@ -147,7 +157,6 @@ p {
 }
 
 /* CAROUSEL */
-.react-multi-carousel-item div h6,
 .react-multi-carousel-item div p {
     margin: 0;
 }
@@ -166,7 +175,7 @@ footer div nav {
 
 @media (max-height: 667.98px) {
     .img-principal img {
-        width: 70% !important;
+        width: 80% !important;
     }
 }
 
@@ -187,6 +196,6 @@ footer div nav {
         justify-content: center;
     }
     .img-principal img {
-        width: 90%;
+        width: 100%;
     }
 }

@@ -4,14 +4,20 @@ export default () => {
     return (
         <section id="cabecalho">
             <div className="container">
-                <h3>Cursos igreja</h3>
+                <h3>Educação cristã</h3>
                 <h1>Secretaria igreja</h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Minus rem optio amet, aut suscipit laboriosam, totam nulla
-                    deserunt odit distinctio unde minima consequatur ullam
-                    nesciunt deleniti voluptatum magni, qui sapiente?
+                {/* <p className="lead">
+                    "SECRETARIA PARÓQUIAL <br />
+                    RUA PADRE NELSON B CARVALHO <br />
+                    CONTATO: (87) 3786-1204 | 98161-4556 <br />
+                    IATI - PE"
+                </p> */}
+                <p className="lead">
+                    "A educação ilumina a mente, e a fé fortalece o coração. Com
+                    Deus como guia, o conhecimento se transforma em sabedoria
+                    para servir ao próximo."
                 </p>
+                <cite>~ Autor desconhecido</cite>
                 <div className="img-principal">
                     <img src={ImgIgreja} alt="img-igreja" />
                 </div>
