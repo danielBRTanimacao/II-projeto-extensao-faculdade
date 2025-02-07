@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Section from "./components/Section";
 import Carousel from "./components/Carousel";
+import Liturgy from "./components/Liturgy";
 
 export default () => {
     return (
@@ -11,6 +12,7 @@ export default () => {
                 <section className="container">
                     <Carousel />
                 </section>
+                <Liturgy />
             </main>
         </>
     );
