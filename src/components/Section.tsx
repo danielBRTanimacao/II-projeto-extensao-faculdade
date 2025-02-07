@@ -1,4 +1,5 @@
-import ImgIgreja from "../assets/imgs/img-igreja-simple.png";
+import ImgIgreja from "../assets/imgs/img-igreja-simple2.png";
+// import ImgIgreja from "../assets/imgs/img-igreja-simple.png";
 
 export default () => {
     return (
