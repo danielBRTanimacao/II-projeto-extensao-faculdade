@@ -120,6 +120,31 @@ p {
 }
 
 /* Main principal */
+#cursos {
+    block-size: 100dvh;
+}
+
+.course-header {
+    padding: 3.2em 0 0;
+}
+
+.view-course h5 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.btn-access {
+    padding: 2em;
+    text-align: center;
+}
+
+.btn-access a {
+    text-decoration: none;
+    background-color: var(--primary-yellow);
+    color: var(--accent-white);
+    padding: 1em;
+    border-radius: 6px;
+}
 
 /* CAROUSEL */
 .react-multi-carousel-item div h6,

@@ -22,36 +22,47 @@ export default () => {
     };
     return (
         <section className="container" id="cursos">
+            <div className="course-header">
+                <h2>Lorem impsum</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Similique, ullam.
+                </p>
+            </div>
             <Carousel responsive={responsive}>
-                <div>
-                    <h6>title curso</h6>
-                    <img src="curso" alt="curso" />
-                    <p>um pouco sobre</p>
+                <div className="view-course">
+                    <h5>Curso manicure</h5>
+                    <img
+                        src="https://i.ytimg.com/vi/OshByUcCkqA/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDEXHOW7IkV5IHyINtzKGKHGNRIFA"
+                        alt="curso"
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Obcaecati ea consectetur, deserunt mollitia laboriosam
+                        similique ipsam sequi assumenda corporis magnam
+                        molestias odit repellat architecto fugit provident ipsa
+                        ratione rerum nam.
+                    </p>
+                    <aside className="btn-access">
+                        <a href="#">Acessar curso</a>
+                    </aside>
                 </div>
-                <div>
-                    <h6>title curso</h6>
-                    <img src="curso" alt="curso" />
-                    <p>um pouco sobre</p>
-                </div>
-                <div>
-                    <h6>title curso</h6>
-                    <img src="curso" alt="curso" />
-                    <p>um pouco sobre</p>
-                </div>
-                <div>
-                    <h6>title curso</h6>
-                    <img src="curso" alt="curso" />
-                    <p>um pouco sobre</p>
-                </div>
-                <div>
-                    <h6>title curso</h6>
-                    <img src="curso" alt="curso" />
-                    <p>um pouco sobre</p>
-                </div>
-                <div>
-                    <h6>title curso</h6>
-                    <img src="curso" alt="curso" />
-                    <p>um pouco sobre</p>
+                <div className="view-course">
+                    <h5>Curso manicure</h5>
+                    <img
+                        src="https://i.ytimg.com/vi/OshByUcCkqA/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDEXHOW7IkV5IHyINtzKGKHGNRIFA"
+                        alt="curso"
+                    />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Obcaecati ea consectetur, deserunt mollitia laboriosam
+                        similique ipsam sequi assumenda corporis magnam
+                        molestias odit repellat architecto fugit provident ipsa
+                        ratione rerum nam.
+                    </p>
+                    <aside className="btn-access">
+                        <a href="#">Acessar curso</a>
+                    </aside>
                 </div>
             </Carousel>
         </section>

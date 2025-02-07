@@ -2,7 +2,7 @@ export default () => {
     return (
         <section className="container" id="horarios">
             <div>
-                <h1>seção</h1>
+                <h2>Eventos e horarios</h2>
             </div>
         </section>
     );
