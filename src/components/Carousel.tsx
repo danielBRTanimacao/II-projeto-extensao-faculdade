@@ -21,37 +21,39 @@ export default () => {
         }
     };
     return (
-        <Carousel responsive={responsive}>
-            <div>
-                <h6>title curso</h6>
-                <img src="curso" alt="curso" />
-                <p>um pouco sobre</p>
-            </div>
-            <div>
-                <h6>title curso</h6>
-                <img src="curso" alt="curso" />
-                <p>um pouco sobre</p>
-            </div>
-            <div>
-                <h6>title curso</h6>
-                <img src="curso" alt="curso" />
-                <p>um pouco sobre</p>
-            </div>
-            <div>
-                <h6>title curso</h6>
-                <img src="curso" alt="curso" />
-                <p>um pouco sobre</p>
-            </div>
-            <div>
-                <h6>title curso</h6>
-                <img src="curso" alt="curso" />
-                <p>um pouco sobre</p>
-            </div>
-            <div>
-                <h6>title curso</h6>
-                <img src="curso" alt="curso" />
-                <p>um pouco sobre</p>
-            </div>
-        </Carousel>
+        <section className="container" id="cursos">
+            <Carousel responsive={responsive}>
+                <div>
+                    <h6>title curso</h6>
+                    <img src="curso" alt="curso" />
+                    <p>um pouco sobre</p>
+                </div>
+                <div>
+                    <h6>title curso</h6>
+                    <img src="curso" alt="curso" />
+                    <p>um pouco sobre</p>
+                </div>
+                <div>
+                    <h6>title curso</h6>
+                    <img src="curso" alt="curso" />
+                    <p>um pouco sobre</p>
+                </div>
+                <div>
+                    <h6>title curso</h6>
+                    <img src="curso" alt="curso" />
+                    <p>um pouco sobre</p>
+                </div>
+                <div>
+                    <h6>title curso</h6>
+                    <img src="curso" alt="curso" />
+                    <p>um pouco sobre</p>
+                </div>
+                <div>
+                    <h6>title curso</h6>
+                    <img src="curso" alt="curso" />
+                    <p>um pouco sobre</p>
+                </div>
+            </Carousel>
+        </section>
     );
 };

@@ -1,3 +1,5 @@
+import ImgIgreja from "../assets/imgs/img-igreja-simple.png";
+
 export default () => {
     return (
         <section id="cabecalho">
@@ -10,6 +12,9 @@ export default () => {
                     deserunt odit distinctio unde minima consequatur ullam
                     nesciunt deleniti voluptatum magni, qui sapiente?
                 </p>
+                <div className="img-principal">
+                    <img src={ImgIgreja} alt="img-igreja" />
+                </div>
             </div>
         </section>
     );

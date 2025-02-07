@@ -3,6 +3,7 @@ import Section from "./components/Section";
 import Carousel from "./components/Carousel";
 import Liturgy from "./components/Liturgy";
 import Footer from "./components/Footer";
+import Events from "./components/Events";
 
 export default () => {
     return (
@@ -10,9 +11,8 @@ export default () => {
             <Header />
             <Section />
             <main>
-                <section className="container">
-                    <Carousel />
-                </section>
+                <Carousel />
+                <Events />
                 <Liturgy />
             </main>
             <Footer />

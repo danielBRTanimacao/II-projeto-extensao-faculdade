@@ -26,7 +26,7 @@ export default () => {
     };
 
     return (
-        <section className="container">
+        <section className="container" id="liturgia">
             <div>
                 <h2>Liturgia Diária</h2>
                 {error && <p style={{ color: "red" }}>Erro: {error}</p>}
