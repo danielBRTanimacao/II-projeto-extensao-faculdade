@@ -35,6 +35,22 @@ p {
     font-family: "Montserrat", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--accent-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .container {
     margin: 0 1em;
 }
@@ -52,11 +68,13 @@ p {
 
 .header {
     position: fixed;
-    width: 93%;
+    z-index: 10000;
+    width: 100%;
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 1em 0;
+    padding: 1em;
+    background-color: var(--accent-white);
 }
 
 .nav-header a {
@@ -100,6 +118,17 @@ p {
 .react-multi-carousel-item div h6,
 .react-multi-carousel-item div p {
     margin: 0;
+}
+
+/* FOOTER */
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div nav a {
+    margin: 0 5px;
 }
 
 @media (max-width: 575.98px) {

@@ -1,6 +1,6 @@
 export default () => {
     return (
-        <header className="header container">
+        <header className="header">
             <a href="#cabecalho">
                 <img src="./logo.ico" alt="logo-image" className="logo" />
             </a>
