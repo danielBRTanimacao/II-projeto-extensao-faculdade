@@ -39,7 +39,7 @@ export default () => {
     return (
         <section className="container" id="cursos">
             <div className="course-header">
-                <h2>
+                <h2 style={{ fontSize: "2.1em" }}>
                     Cursos presenciais e online,{" "}
                     <span
                         style={{
@@ -48,7 +48,7 @@ export default () => {
                             letterSpacing: "1px"
                         }}
                     >
-                        confira diversos cursos recomendados para você!
+                        confira diversas recomendações de curso para você!
                     </span>
                 </h2>
             </div>
@@ -72,7 +72,9 @@ export default () => {
                             style={{ margin: "0 5px", paddingTop: "1.5em" }}
                         >
                             <img src={course.image} alt={course.title} />
-                            <h5 style={{ margin: "6px 0" }}>{course.title}</h5>
+                            <h5 style={{ margin: "6px 0", fontSize: "1.4em" }}>
+                                {course.title}
+                            </h5>
                             <p>{course.small_description}</p>
                             <aside className="btn-access">
                                 <a href={course.url} target="blanck">

@@ -26,17 +26,12 @@ h1 {
 
 h1,
 h2,
-h3 {
-    font-family: "Merriweather", serif !important;
-}
-
-h1,
-h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: "Poppins", sans-serif;
+h6,
+strong {
+    font-family: "Merriweather", serif;
     line-height: 1em;
     margin: 0;
 }
@@ -97,7 +92,7 @@ cite {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 1em;
+    padding: 1em 0.5em;
     background-color: var(--accent-white);
 }
 
@@ -144,7 +139,7 @@ cite {
 /* Main principal */
 
 .course-header {
-    padding: 5em 0 0;
+    padding: 7em 0 0;
 }
 
 .view-course h5 {
@@ -179,7 +174,7 @@ cite {
 
 #horarios {
     margin: 2em;
-    padding: 5.5em 0;
+    padding: 7.5em 0;
 }
 
 .division {
