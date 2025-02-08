@@ -20,8 +20,13 @@ body {
 }
 
 h1 {
-    font-family: "Merriweather", serif !important;
     font-size: 4em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Merriweather", serif !important;
 }
 
 h1,
@@ -144,7 +149,7 @@ cite {
 }
 
 .btn-access {
-    padding: 2em;
+    padding: 3.5em 0;
     text-align: center;
 }
 
@@ -152,8 +157,14 @@ cite {
     text-decoration: none;
     background-color: var(--primary-yellow);
     color: var(--accent-white);
-    padding: 1em;
+    padding: 1.3em 2.3em;
+    font-size: large;
+    font-weight: 700;
     border-radius: 6px;
+}
+
+.btn-access a:hover {
+    background-color: var(--secondary-orange);
 }
 
 /* CAROUSEL */

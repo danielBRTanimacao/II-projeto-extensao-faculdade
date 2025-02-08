@@ -37,7 +37,9 @@ export default () => {
         <section className="container" id="cursos">
             <div className="course-header">
                 <h2>Cursos recomendados</h2>
-                <p>Confira os cursos mais recomendados para você!</p>
+                <p className="lead">
+                    Confira os cursos mais recomendados para você!
+                </p>
             </div>
 
             {loading ? (
@@ -47,12 +49,18 @@ export default () => {
             ) : (
                 <Carousel responsive={responsive}>
                     {data.map((course, index) => (
-                        <div key={index} className="view-course">
-                            <h5>{course.title}</h5>
+                        <div
+                            key={index}
+                            className="view-course"
+                            style={{ margin: "0 5px" }}
+                        >
                             <img src={course.image} alt={course.title} />
+                            <h5>{course.title}</h5>
                             <p>{course.small_description}</p>
                             <aside className="btn-access">
-                                <a href="#">Acessar curso</a>
+                                <a href={course.url} target="blanck">
+                                    Acessar curso
+                                </a>
                             </aside>
                         </div>
                     ))}
