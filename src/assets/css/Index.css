@@ -135,7 +135,6 @@ cite {
     background-color: var(--light-blue);
     color: var(--accent-white);
     align-content: center;
-    block-size: 100dvh;
 }
 
 .img-principal {
@@ -143,10 +142,6 @@ cite {
 }
 
 /* Main principal */
-#cursos,
-#horarios {
-    block-size: 100dvh;
-}
 
 .course-header {
     padding: 5em 0 0;
@@ -183,7 +178,26 @@ cite {
 /* Events */
 
 #horarios {
+    margin: 2em;
+    padding: 5.5em 0;
+}
+
+.division {
+    margin: 2em 1em;
+}
+
+.division fieldset {
     align-content: center;
+    margin: 3em 1em;
+    border: 2px solid var(--primary-dk-blue);
+    border-radius: 6px;
+    height: 15em;
+}
+
+.division fieldset legend {
+    background-color: var(--accent-white);
+    font-weight: 700;
+    border-radius: 2px;
 }
 
 /* FOOTER */
