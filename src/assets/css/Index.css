@@ -180,6 +180,12 @@ cite {
     margin: 0;
 }
 
+/* Events */
+
+#horarios {
+    align-content: center;
+}
+
 /* FOOTER */
 footer div,
 footer div nav {
