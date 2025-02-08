@@ -51,7 +51,6 @@ export default () => {
                             <strong>Comunhão:</strong> {data.comunhao}
                         </p>
 
-                        {/* Primeira Leitura */}
                         {data.primeiraLeitura && (
                             <div>
                                 <h3>Primeira Leitura</h3>
@@ -67,7 +66,6 @@ export default () => {
                             </div>
                         )}
 
-                        {/* Segunda Leitura */}
                         {data.segundaLeitura &&
                             data.segundaLeitura !==
                                 "Não há segunda leitura hoje!" && (
@@ -77,7 +75,6 @@ export default () => {
                                 </div>
                             )}
 
-                        {/* Salmo Responsorial */}
                         {data.salmo && (
                             <div>
                                 <h3>Salmo Responsorial</h3>
@@ -92,7 +89,6 @@ export default () => {
                             </div>
                         )}
 
-                        {/* Evangelho */}
                         {data.evangelho && (
                             <div>
                                 <h3>Evangelho</h3>
@@ -108,7 +104,6 @@ export default () => {
                             </div>
                         )}
 
-                        {/* Antífonas */}
                         {data.antifonas && (
                             <div>
                                 <h3>Antífonas</h3>

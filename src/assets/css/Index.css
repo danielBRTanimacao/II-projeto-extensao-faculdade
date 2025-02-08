@@ -136,7 +136,7 @@ cite {
 }
 
 .course-header {
-    padding: 3.2em 0 0;
+    padding: 5em 0 0;
 }
 
 .view-course h5 {
@@ -173,18 +173,18 @@ footer div nav {
     gap: 15px;
 }
 
-@media (max-height: 667.98px) {
+/* @media (max-height: 667.98px) {
     .img-principal img {
         width: 80% !important;
     }
-}
+} */
 
 @media (max-width: 575.98px) {
     .container {
         margin: 0.5em;
     }
     h1 {
-        font-size: 2.5em;
+        font-size: 2.7em;
     }
     #cabecalho {
         align-content: baseline;
@@ -196,6 +196,7 @@ footer div nav {
         justify-content: center;
     }
     .img-principal img {
+        padding-top: 5em;
         width: 100%;
     }
 }
