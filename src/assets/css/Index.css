@@ -6,6 +6,7 @@
     --primary-dk-blue: #0a2463;
     --light-blue: #017bba;
     --primary-yellow: #fdb515;
+    --secondary-yellow: #fba518;
     --primary-orange: #f97300;
     --secondary-orange: #ff6500;
     --accent-white: #ffffff;
@@ -36,6 +37,7 @@ h4,
 h5,
 h6 {
     font-family: "Poppins", sans-serif;
+    line-height: 1em;
     margin: 0;
 }
 
@@ -70,6 +72,11 @@ p {
 .lead,
 cite {
     font-weight: 220;
+}
+
+.loading-api {
+    padding: 7em 0;
+    text-align: center;
 }
 
 /* PRINCIPAL HEADER */
@@ -136,7 +143,8 @@ cite {
 }
 
 /* Main principal */
-#cursos {
+#cursos,
+#horarios {
     block-size: 100dvh;
 }
 
@@ -149,13 +157,13 @@ cite {
 }
 
 .btn-access {
-    padding: 3.5em 0;
+    padding: 5em 0;
     text-align: center;
 }
 
 .btn-access a {
     text-decoration: none;
-    background-color: var(--primary-yellow);
+    background-color: var(--secondary-yellow);
     color: var(--accent-white);
     padding: 1.3em 2.3em;
     font-size: large;
@@ -183,12 +191,6 @@ footer div nav {
 footer div nav {
     gap: 15px;
 }
-
-/* @media (max-height: 667.98px) {
-    .img-principal img {
-        width: 80% !important;
-    }
-} */
 
 @media (max-width: 575.98px) {
     .container {
