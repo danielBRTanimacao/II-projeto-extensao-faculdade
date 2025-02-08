@@ -1,5 +1,4 @@
-import ImgIgreja from "../assets/imgs/img-igreja-simple2.png";
-// import ImgIgreja from "../assets/imgs/img-igreja-simple.png";
+import ImgIgreja from "../assets/imgs/icon-image.png";
 
 export default () => {
     return (
@@ -7,12 +6,6 @@ export default () => {
             <div className="container">
                 <h3>Educação cristã</h3>
                 <h1>Secretaria igreja</h1>
-                {/* <p className="lead">
-                    "SECRETARIA PARÓQUIAL <br />
-                    RUA PADRE NELSON B CARVALHO <br />
-                    CONTATO: (87) 3786-1204 | 98161-4556 <br />
-                    IATI - PE"
-                </p> */}
                 <p className="lead">
                     "A educação ilumina a mente, e a fé fortalece o coração. Com
                     Deus como guia, o conhecimento se transforma em sabedoria
