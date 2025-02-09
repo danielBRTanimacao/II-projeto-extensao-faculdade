@@ -250,3 +250,16 @@ footer div nav {
         width: 100%;
     }
 }
+
+@media (min-width: 767.98px) {
+    #cabecalho {
+        height: 100dvh;
+        background-image: url("../imgs/bg-img-principal.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    #cabecalho h1 {
+        font-size: 5.5em;
+    }
+}
