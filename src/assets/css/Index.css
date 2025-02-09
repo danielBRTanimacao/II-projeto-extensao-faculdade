@@ -74,6 +74,11 @@ cite {
     text-align: center;
 }
 
+hr {
+    border-style: inset;
+    margin: 0.5em 1.5em;
+}
+
 /* PRINCIPAL HEADER */
 .logo {
     width: 36px;
@@ -196,6 +201,23 @@ cite {
 }
 
 /* FOOTER */
+#sobre {
+    padding: 2em 0 1em;
+}
+
+#sobre .bottom-copyright {
+    text-align: center;
+    padding: 15px 0 0;
+}
+
+.icons a {
+    color: var(--primary-yellow);
+}
+
+.icons a:hover {
+    color: var(--secondary-orange);
+}
+
 footer div,
 footer div nav {
     display: flex;
