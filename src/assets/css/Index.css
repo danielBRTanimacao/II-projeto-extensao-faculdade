@@ -262,4 +262,14 @@ footer div nav {
     #cabecalho h1 {
         font-size: 5.5em;
     }
+
+    .division {
+        justify-self: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .division fieldset {
+        margin: 1em 0.5em;
+    }
 }
