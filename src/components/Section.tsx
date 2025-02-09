@@ -6,7 +6,7 @@ export default () => {
             <div className="container">
                 <h3>Educação cristã</h3>
                 <h1>Secretaria igreja</h1>
-                <p className="lead">
+                <p className="lead small-lead">
                     "A educação ilumina a mente, e a fé fortalece o coração. Com
                     Deus como guia, o conhecimento se transforma em sabedoria
                     para servir ao próximo."

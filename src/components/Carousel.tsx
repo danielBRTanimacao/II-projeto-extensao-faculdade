@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import Sycron from "../assets/svg/undraw_synchronize_txyw.svg";
-import Error404 from "../assets/svg/undraw_page-not-found_6wni.svg";
-
 export default () => {
     const responsive = {
         superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 5 },
@@ -39,15 +36,9 @@ export default () => {
     return (
         <section className="container" id="cursos">
             <div className="course-header">
-                <h2 style={{ fontSize: "2.1em" }}>
+                <h2>
                     Cursos presenciais e online,{" "}
-                    <span
-                        style={{
-                            fontWeight: "300",
-                            fontSize: ".7em",
-                            letterSpacing: "1px"
-                        }}
-                    >
+                    <span>
                         confira diversas recomendações de curso para você!
                     </span>
                 </h2>
@@ -56,26 +47,27 @@ export default () => {
             {loading ? (
                 <div className="loading-api">
                     <h4>Carregando cursos...</h4>
-                    <img src={Sycron} alt="sicronizando-img" />
                 </div>
             ) : error ? (
                 <div className="loading-api">
                     <h4>Erro ao carregar cursos: {error}</h4>
-                    <img src={Error404} alt="sicronizando-img" />
                 </div>
             ) : (
                 <Carousel responsive={responsive}>
                     {data.map((course, index) => (
-                        <div
-                            key={index}
-                            className="view-course"
-                            style={{ margin: "0 5px", paddingTop: "1.5em" }}
-                        >
+                        <div key={index} className="view-course">
                             <img src={course.image} alt={course.title} />
-                            <h5 style={{ margin: "6px 0", fontSize: "1.4em" }}>
+                            <h5
+                                style={{
+                                    margin: "12px 0 6px",
+                                    fontSize: "1.4em"
+                                }}
+                            >
                                 {course.title}
                             </h5>
-                            <p>{course.small_description}</p>
+                            <p className="description-course">
+                                {course.small_description}
+                            </p>
                             <aside className="btn-access">
                                 <a href={course.url} target="blanck">
                                     Acessar curso

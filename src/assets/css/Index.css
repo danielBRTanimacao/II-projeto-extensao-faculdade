@@ -147,8 +147,30 @@ hr {
     padding: 7em 0 0;
 }
 
+.course-header h2 {
+    font-size: 2.1em;
+}
+
+.course-header span {
+    font-weight: 300;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+}
+
+.view-course {
+    margin: 0 5px;
+    padding-top: 1.5em;
+}
+
 .view-course h5 {
     font-size: 1em;
+}
+
+.description-course {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .btn-access {
@@ -271,5 +293,21 @@ footer div nav {
 
     .division fieldset {
         margin: 1em 0.5em;
+    }
+
+    .small-lead {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    #cabecalho h1 {
+        font-size: 7em;
+    }
+    #cabecalho h3 {
+        font-size: 2em;
+    }
+    #cabecalho p {
+        font-size: 1.6em;
     }
 }

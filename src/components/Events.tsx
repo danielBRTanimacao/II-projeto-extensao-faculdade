@@ -33,7 +33,12 @@ export default () => {
             <h1>Eventos e horários</h1>
 
             {loading && <p>Carregando eventos...</p>}
-            {error && <p style={{ color: "red" }}>Erro: {error}</p>}
+            {error && (
+                <p>
+                    Não temos eventos nesse momento <br />
+                    {error}
+                </p>
+            )}
 
             {!loading && !error && (
                 <article className="division">
