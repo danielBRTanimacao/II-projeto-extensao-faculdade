@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Curso de manicure",
+        "date_launch": "2024-01-15",
+        "small_description": "Curso de Manicure com Wanessa Guedes no YouTube – um curso introdutório totalmente gratuito!",
+        "image": "https://i.ytimg.com/vi/OshByUcCkqA/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDEXHOW7IkV5IHyINtzKGKHGNRIFA",
+        "url": "https://youtu.be/OshByUcCkqA?si=fduEpkSaXWZh_oiN"
+    },
+    {
+        "title": "Curso completo de violão gratuito para iniciantes",
+        "date_launch": "2017-04-28",
+        "small_description": "Curso básico de violão para iniciantes. Diego Junges",
+        "image": "https://i.ytimg.com/vi/-oT2SfILGCY/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCkXHGZPaSfNgYhRdGYgpUh4oYhEQ",
+        "url": "https://www.youtube.com/watch?v=-oT2SfILGCY&list=PLPXmN3KeXMo6PSh5-XBjw5NUKpycSic3d"
+    },
+    {
+        "title": "Começa aqui o seu Curso de Inglês - ‪@CursoemVideo‬ de Inglês: Módulo 1",
+        "date_launch": "2023-04-12",
+        "small_description": "Você está preparado para o seu novo Curso em Vídeo de Inglês? Sabe o que vamos aprender nesse primeiro módulo? Quer saber se esse curso vai atender as suas necessidades? Então veja esse vídeo até o fim para responder a todas essas perguntas. Esse vídeo faz parte do seu curso de Inglês 100% grátis, criado pela professora Joana Costa com ajuda do professor Gustavo Guanabara, do canal ‪@CursoemVideo‬",
+        "image": "https://i.ytimg.com/vi/QoTfOVYXmUc/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD-tRZep_pAy6CG365OmwYR-5_tog",
+        "url": "https://youtu.be/QoTfOVYXmUc?si=iNx4aJoGnZ3KT2oO"
+    },
+    {
+        "title": "Curso Python #01 - Seja um Programador",
+        "date_launch": "2017-04-03",
+        "small_description": "Aula do Curso de Programação em Linguagem Python criado pelo professor Gustavo Guanabara para o portal CursoemVideo.com.",
+        "image": "https://i.ytimg.com/vi/EBrZSrB8eUw/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAAFvyr4Sj7-zNFKo1MsYj1ut7__A",
+        "url": "#"
+    },
+    {
+        "title": "React.js Masterclass",
+        "date_launch": "2024-05-20",
+        "small_description": "Deep dive into React.js to build modern and dynamic web applications.",
+        "image": "https://fakeimg.pl/450x250/",
+        "url": "#"
+    }
+]
