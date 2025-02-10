@@ -24,7 +24,7 @@ def events_request():
     return jsonify(courses)
 
 @app.route('/interface')
-def interface_updates():
+def interface_updates(): # ESSE CODIGO SERA ALTERADO NO MAIN
     return render_template("index.html")
 
 if __name__ == "__main__":
