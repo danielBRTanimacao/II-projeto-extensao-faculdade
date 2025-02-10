@@ -4,6 +4,33 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Interface - Cursos e Eventos</title>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
     </head>
-    <body></body>
+    <body>
+        <h1>Cursos</h1>
+        <main>
+            <form action="#">
+                <h3>Adicionar Curso</h3>
+                <label for="imageId">Imagem do curso:</label>
+                <input type="file" name="image" id="imageId" />
+                <label for="titleID">Nome do curso:</label>
+                <input type="text" name="title" id="titleId" />
+                <label for="date_launchId">Data que o curso foi lançado:</label>
+                <input type="date" name="date_launch" id="date_launchId" />
+                <label for="small_descriptionId">Um pouco sobre o curso:</label>
+                <input
+                    type="text"
+                    name="small_description"
+                    id="small_descriptionId"
+                />
+                <label for="urlId">Link do curso:</label>
+                <input type="url" name="url" id="urlID" />
+            </form>
+        </main>
+    </body>
 </html>

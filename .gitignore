@@ -26,3 +26,8 @@ dist-ssr
 # BACKEND
 venv
 .env
+
+courses.json
+events.json
+
+db.sqlite3
