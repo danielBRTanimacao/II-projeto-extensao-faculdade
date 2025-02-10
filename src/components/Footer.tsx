@@ -4,6 +4,14 @@ export default () => {
     return (
         <footer className="container" id="sobre">
             <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Natus, nesciunt ad explicabo nisi, dolorem odit cupiditate,
+                    maxime et consequatur temporibus itaque saepe? Accusantium
+                    quod saepe dolorum, omnis earum aspernatur ab.
+                </p>
+            </div>
+            <div>
                 <nav className="nav-header">
                     <a href="#">Contato</a>
                     <a href="#">Api</a>

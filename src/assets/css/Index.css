@@ -310,4 +310,7 @@ footer div nav {
     #cabecalho p {
         font-size: 1.6em;
     }
+    #sobre {
+        padding: 4em 0;
+    }
 }
