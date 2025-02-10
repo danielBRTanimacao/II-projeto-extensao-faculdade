@@ -3,12 +3,32 @@ export default () => {
 
     return (
         <footer className="container" id="sobre">
-            <div>
+            <div style={{ display: "block" }}>
+                <h3>Sobre o projeto</h3>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Natus, nesciunt ad explicabo nisi, dolorem odit cupiditate,
-                    maxime et consequatur temporibus itaque saepe? Accusantium
-                    quod saepe dolorum, omnis earum aspernatur ab.
+                    O tema principal do projeto <strong>"educação"</strong>. A
+                    Secretaria da Igreja foi a instituição escolhida para ser a
+                    beneficiária dessa iniciativa.
+                </p>
+                <p>
+                    Identifiquei que a falta de estrutura e tecnologia era um
+                    desafio na organização de avisos, eventos e até na
+                    disseminação de cursos sobre diversas áreas. A solução que
+                    estou desenvolvendo envolve a criação de um sistema de
+                    avisos e eventos, além de fomentar a educação em várias
+                    frentes, incluindo cursos e atividades voltadas tanto para a
+                    comunidade quanto para a própria igreja.
+                </p>
+                <p>
+                    Esse projeto faz parte do{" "}
+                    <em>Programa de Ação e Difusão Cultural</em> do{" "}
+                    <em>
+                        Curso Superior de Tecnologia em Análise e
+                        Desenvolvimento de Sistemas
+                    </em>{" "}
+                    e tem como objetivo aplicar os conhecimentos de tecnologia
+                    da informação para apoiar pessoas e grupos ligados a
+                    atividades culturais.
                 </p>
             </div>
             <div>
