@@ -25,7 +25,8 @@ def events_request():
 
 @app.route('/interface')
 def interface_updates(): # ESSE CODIGO SERA ALTERADO NO MAIN
-    return render_template("index.html")
+    events = load_courses(EVENTS_JSON_FILE)
+    return render_template("index.html", events=events)
 
 if __name__ == "__main__":
     app.run(debug=True)

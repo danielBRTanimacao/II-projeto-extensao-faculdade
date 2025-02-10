@@ -12,14 +12,27 @@
                     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
                     "Helvetica Neue", sans-serif;
             }
-            body {
+            main {
                 margin: 0 10px;
             }
-            h1 {
-                text-align: center;
-                margin: 1em 0;
+
+            header {
+                background-color: #7886c7;
             }
+
+            h1,
+            h2 {
+                text-align: center;
+                padding: 0.6em 0;
+                color: white;
+            }
+
+            h2 {
+                color: black;
+            }
+
             form {
+                padding: 1.5em 0;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -39,14 +52,19 @@
                 padding: 1em;
                 border-radius: 6px;
                 border: none;
-                background-color: green;
+                background-color: #27667b;
                 color: white;
                 font-weight: 700;
                 cursor: pointer;
             }
 
             button:hover {
-                background-color: darkgreen;
+                background-color: #143d60;
+            }
+
+            section {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
             }
 
             @media (max-width: 767.98px) {
@@ -57,9 +75,11 @@
         </style>
     </head>
     <body>
-        <h1>Eventos</h1>
+        <header>
+            <h1>Eventos e Cursos</h1>
+        </header>
         <main>
-            <form action="#">
+            <form action="#" method="post">
                 <h3>Adicionar Evento</h3>
                 <div>
                     <label for="imgOpacityId">Imagem deve ser opaca:</label>
@@ -91,13 +111,17 @@
                 />
                 <button type="submit">ADICIONAR Evento</button>
             </form>
+            <h2>Remover eventos</h2>
             <section>
-                <h2>Remover eventos</h2>
-                <ul>
-                    <li>aqui</li>
-                    <li>aqui</li>
-                    <li>aqui</li>
-                </ul>
+                {% for event in events %}
+                    <div class="evento">
+                        <h3>{{ event.title }}</h3>
+                        <p><strong>Data:</strong> {{ event.date }}</p>
+                        <p><strong>Local:</strong> {{ event.text }}</p>
+                        <p>{{ event.about | safe }}</p>
+                        <img src={{event.imgOpacity}} width="150" alt="imagem-opcional" />
+                    </div>
+                {% endfor %}
             </section>
         </main>
     </body>

@@ -57,7 +57,10 @@ export default () => {
                                 <strong>{e.date}</strong>
                             </p>
                             <p>{e.text}</p>
-                            <p dangerouslySetInnerHTML={{ __html: e.about }} />
+                            <p>
+                                <strong>Tema: </strong>
+                                <em>{e.about}</em>
+                            </p>
                         </fieldset>
                     ))}
                 </article>
