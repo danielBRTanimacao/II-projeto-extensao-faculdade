@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Interface - Cursos e Eventos</title>
+        <title>Update Eventos</title>
         <style>
             body {
                 background: #fef9f2;
@@ -51,7 +51,8 @@
                 font-size: 1em;
             }
 
-            button {
+            button,
+            a {
                 text-decoration: none;
                 padding: 1em;
                 border-radius: 6px;
@@ -60,11 +61,6 @@
                 color: white;
                 font-weight: 700;
                 cursor: pointer;
-            }
-
-            a {
-                text-decoration: none;
-                color: white;
             }
 
             .del {
@@ -101,11 +97,10 @@
     </head>
     <body>
         <header>
-            <h1>Eventos e Cursos</h1>
+            <h1>Update Evento</h1>
         </header>
         <main>
-            <form action="/interface" method="post">
-                <h3>Adicionar Evento</h3>
+            <form action="/update/{{event_id}}" method="post">
                 <div>
                     <label for="imgOpacityId">Imagem deve ser opaca:</label>
                     <input type="file" name="imgOpacity" id="imgOpacityId" />
@@ -115,86 +110,31 @@
                     name="title"
                     id="titleId"
                     placeholder="Nome do evento..."
+                    value="{{event.title}}"
                 />
                 <input
                     type="datetime-local"
                     name="date"
                     id="dateId"
                     placeholder="Data do evento..."
+                    value="{{event.date}}"
                 />
                 <input
                     type="text"
                     name="text"
                     id="textId"
                     placeholder="Onde e o evento..."
+                    value="{{event.text}}"
                 />
                 <input
                     type="text"
                     name="about"
                     id="aboutId"
                     placeholder="Tema do evento..."
+                    value="{{event.about}}"
                 />
-                <button type="submit">ADICIONAR Evento</button>
+                <button type="submit">MUDAR Evento</button>
             </form>
-            <h2>Remover eventos</h2>
-            <section>
-                {% for event in events %}
-                <div class="evento">
-                    <div>
-                        <button class="del">deletar</button>
-                        <button class="upd">
-                            <a href="/update/{{ loop.index0 }}">update</a>
-                        </button>
-                    </div>
-                    <h3>{{ event.title }}</h3>
-                    <p><strong>Id:</strong> {{ loop.index0 }}</p>
-                    <p><strong>Data:</strong> {{ event.date }}</p>
-                    <p><strong>Local:</strong> {{ event.text }}</p>
-                    <p><strong>Tema:</strong> {{ event.about }}</p>
-                    <img
-                        src="{{event.imgOpacity}}"
-                        width="150"
-                        alt="imagem-opcional"
-                    />
-                </div>
-                {% endfor %}
-            </section>
         </main>
-        <script>
-            document.querySelectorAll(".del").forEach((button, index) => {
-                button.addEventListener("click", async (e) => {
-                    e.preventDefault();
-                    if (!confirm("Tem certeza que deseja excluir este evento?"))
-                        return;
-                    let response = await fetch(`/delete/${index}`, {
-                        method: "DELETE"
-                    });
-                    let result = await response.json();
-                    alert(result.message);
-                    if (response.ok) location.reload();
-                });
-            });
-
-            document
-                .querySelector("form")
-                .addEventListener("submit", async (e) => {
-                    e.preventDefault();
-                    let newEvent = {
-                        title: document.getElementById("titleId").value,
-                        date: document.getElementById("dateId").value,
-                        text: document.getElementById("textId").value,
-                        about: document.getElementById("aboutId").value,
-                        imgOpacity: "not-found"
-                    };
-                    let response = await fetch("/create", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(newEvent)
-                    });
-                    let result = await response.json();
-                    alert(result.message);
-                    if (response.ok) location.reload();
-                });
-        </script>
     </body>
 </html>

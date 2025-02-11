@@ -24,6 +24,20 @@ export default () => {
         getDataEndpoint();
     }, []);
 
+    const dateFormater = (date: string) => {
+        const dt = new Date(date);
+        const ftDate =
+            dt.toLocaleDateString("pt-BR") +
+            " - " +
+            dt.toLocaleTimeString("pt-BR", {
+                hour: "2-digit",
+                minute: "2-digit"
+            }) +
+            "H";
+
+        return ftDate;
+    };
+
     return (
         <section
             className="container"
@@ -54,7 +68,7 @@ export default () => {
                         >
                             <legend>{e.title}</legend>
                             <p>
-                                <strong>{e.date}</strong>
+                                <strong>{dateFormater(e.date)}</strong>
                             </p>
                             <p>{e.text}</p>
                             <p>
