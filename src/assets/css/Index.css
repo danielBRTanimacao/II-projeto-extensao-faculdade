@@ -12,6 +12,10 @@
     --accent-white: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: var(--accent-white);
@@ -97,8 +101,9 @@ hr {
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 1em 0.5em;
+    padding: 1em;
     background-color: var(--accent-white);
+    box-shadow: -1px 1px 20px 0px rgb(103, 103, 103);
 }
 
 .nav-header a {
@@ -270,6 +275,9 @@ footer div nav {
     .img-principal img {
         padding-top: 5em;
         width: 100%;
+    }
+    .header {
+        padding: 1em 0.6em;
     }
 }
 

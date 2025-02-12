@@ -34,7 +34,12 @@ export default () => {
             <div>
                 <nav className="nav-header">
                     <a href="#">Contato</a>
-                    <a href="https://github.com/Dancrf/liturgia-diaria">Api</a>
+                    <a
+                        href="https://github.com/Dancrf/liturgia-diaria"
+                        target="blanck"
+                    >
+                        Api
+                    </a>
                 </nav>
 
                 <nav className="icons">
