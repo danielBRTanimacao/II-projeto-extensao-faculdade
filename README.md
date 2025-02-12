@@ -1,6 +1,6 @@
 # II - projeto extensão faculdade 📖
 
-<img src="não tem ainda" alt="img-project">
+<img src="./img-project/img-project.png" alt="img-project">
 
 > Iniciei uma das disciplinas mais importantes do meu curso: "II Projeto de Extensão". Esse projeto faz parte do Programa de Ação e Difusão Cultural do Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas e tem como objetivo aplicar os conhecimentos de tecnologia da informação para apoiar pessoas e grupos ligados a atividades culturais.
 
