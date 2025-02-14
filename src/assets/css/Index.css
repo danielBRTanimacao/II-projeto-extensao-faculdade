@@ -103,7 +103,7 @@ hr {
     align-items: center;
     padding: 1em;
     background-color: var(--accent-white);
-    box-shadow: -1px 1px 20px 0px rgb(103, 103, 103);
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav-header a {
@@ -219,6 +219,7 @@ hr {
     border: 2px solid var(--primary-dk-blue);
     border-radius: 6px;
     height: 15em;
+    box-shadow: 0px 0px 20px 0px rgba(0, 10, 54, 0.3);
 }
 
 .division fieldset legend {
