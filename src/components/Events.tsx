@@ -1,8 +1,16 @@
 import { useState, useEffect } from "react";
 
+interface EventData {
+    title: string;
+    date: string;
+    text: string;
+    about: string;
+    imgOpacity: string;
+}
+
 export default () => {
     const endpoint = "https://danielbatata.pythonanywhere.com/events";
-    const [data, setData] = useState<any[]>([]);
+    const [data, setData] = useState<EventData[]>([]);
     const [error, setError] = useState<string | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
 
@@ -12,7 +20,7 @@ export default () => {
                 const response = await fetch(endpoint);
                 if (!response.ok) throw new Error(`Erro: ${response.status}`);
 
-                const result = await response.json();
+                const result: EventData[] = await response.json();
                 setData(result);
             } catch (error) {
                 setError((error as Error).message);
@@ -24,18 +32,15 @@ export default () => {
         getDataEndpoint();
     }, []);
 
-    const dateFormater = (date: string) => {
+    const dateFormatter = (date: string) => {
         const dt = new Date(date);
-        const ftDate =
-            dt.toLocaleDateString("pt-BR") +
-            " - " +
-            dt.toLocaleTimeString("pt-BR", {
+        return `${dt.toLocaleDateString("pt-BR")} - ${dt.toLocaleTimeString(
+            "pt-BR",
+            {
                 hour: "2-digit",
                 minute: "2-digit"
-            }) +
-            "H";
-
-        return ftDate;
+            }
+        )}H`;
     };
 
     return (
@@ -54,29 +59,33 @@ export default () => {
                 </p>
             )}
 
-            {!loading && !error && (
+            {!loading && !error && data.length > 0 ? (
                 <article className="division">
-                    {data.map((e, index) => (
+                    {data.map((event, index) => (
                         <fieldset
                             key={index}
                             style={{
-                                backgroundImage: `url('${e.imgOpacity}')`,
+                                backgroundImage: `url('${event.imgOpacity}')`,
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center",
                                 backgroundSize: "cover"
                             }}
                         >
-                            <legend>{e.title}</legend>
+                            <legend>{event.title}</legend>
                             <p>
-                                <strong>{dateFormater(e.date)}</strong>
+                                <strong>{dateFormatter(event.date)}</strong>
                             </p>
-                            <p>{e.text}</p>
+                            <p>{event.text}</p>
                             <p>
                                 <strong>Tema: </strong>
-                                <em>{e.about}</em>
+                                <em>{event.about}</em>
                             </p>
                         </fieldset>
                     ))}
+                </article>
+            ) : (
+                <article>
+                    <p>Não temos eventos no momento</p>
                 </article>
             )}
         </section>
