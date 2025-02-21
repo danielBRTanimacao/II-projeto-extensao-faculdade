@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100..900&display=swap");
 
 :root {
     --primary-dk-blue: #0a2463;
@@ -54,6 +52,7 @@ p {
 
 ::-webkit-scrollbar-thumb {
     background: #888;
+    transition: background 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -268,17 +267,20 @@ footer div nav {
         align-content: baseline;
         padding: 5em 0;
     }
-    .img-principal {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
     .img-principal img {
         padding-top: 5em;
         width: 100%;
     }
     .header {
         padding: 1em 0.6em;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .img-principal {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
